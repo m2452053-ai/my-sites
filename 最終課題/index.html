@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ちいかわ性格診断</title>
+  <style>
+    body {
+      font-family: "Arial Rounded MT Bold", "Hiragino Maru Gothic ProN", sans-serif;
+      background: #fff0f6;
+      text-align: center;
+      color: #555;
+    }
+
+    h1 {
+      color: #ff7eb9;
+    }
+
+    .box {
+      background: #ffffff;
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 15px;
+      background: #ffd6e8;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffb3d9;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 20px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ちいかわ性格診断</h1>
+
+  <div class="box" id="start">
+    <img src="img/start.png">
+    <p>10個の質問に答えてね！</p>
+    <button onclick="startQuiz()">スタート</button>
+  </div>
+
+  <div class="box" id="quiz" style="display:none;">
+    <p id="question"></p>
+    <div id="choices"></div>
+  </div>
+
+  <div class="box" id="result" style="display:none;">
+    <h2 id="resultName"></h2>
+    <img id="resultImg">
+    <p id="resultText"></p>
+  </div>
+
+  <script src="sample.js"></script>
+</body>
+</html>
